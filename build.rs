@@ -24,7 +24,7 @@ fn main() {
 
             // See <https://github.com/ARM-software/astc-encoder/blob/main/CMakeLists.txt>.
             let dst_root = cmake::Config::new(&source_root)
-                .define("ASTCENC_UNIVERSAL_BUILD", "OFF")
+                .define("ASTCENC_UNIVERSAL_BUILD", "ON")
                 .define("ASTCENC_ISA_NATIVE", "ON")
                 .build();
 
