@@ -30,7 +30,7 @@ fn main() {
                 .define("ASTCENC_PACKAGE", "x64")                          
                 .build();
 
-            println!("cargo:rustc-link-lib=astcenc-native-static");
+            println!("cargo:rustc-link-lib=astcenc-avx2-static");
             // Non-Windows.
             println!(
                 "cargo:rustc-link-search={}",
