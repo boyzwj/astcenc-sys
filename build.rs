@@ -24,9 +24,11 @@ fn main() {
 
             // See <https://github.com/ARM-software/astc-encoder/blob/main/CMakeLists.txt>.
             let dst_root = cmake::Config::new(&source_root)
+                .define("CMAKE_BUILD_TYPE", "Release")
                 .define("ASTCENC_ISA_AVX2", "ON")
                 .define("ASTCENC_ISA_SSE41", "ON")
-                .define("ASTCENC_ISA_SSE2", "ON")         
+                .define("ASTCENC_ISA_SSE2", "ON")
+                .define("ASTCENC_ISA_NONE", "ON") 
                 .define("ASTCENC_PACKAGE", "x64")                          
                 .build();
 

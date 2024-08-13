@@ -17,4 +17,4 @@ exclude = ["/astc-encoder/Docs", "/astc-encoder/jenkins", "/astc-encoder/Test"]
 [build-dependencies]
 bindgen = "0.69"
 pkg-config = "0.3"
-cmake = "0.1.49"
+cmake = "0.1.50"
